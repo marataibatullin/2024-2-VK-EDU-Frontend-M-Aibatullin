@@ -25,6 +25,20 @@ nonUniqueElements([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]
  */
 
 export default function nonUniqueElements(data) {
-  // your solution goes here
-  return data
+
+  const frequancy = {};
+
+  for (let i = 0; i < data.length; i++) {
+    frequancy[data[i]] = (frequancy[data[i]] || 0) + 1; 
+  }
+
+  const result = []
+  
+  for (let i = 0; i < data.length; i++) {
+    if (frequancy[data[i]] > 1) {
+      result.push(data[i])
+    }
+  }
+
+  return result
 }

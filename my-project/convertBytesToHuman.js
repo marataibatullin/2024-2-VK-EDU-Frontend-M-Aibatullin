@@ -13,5 +13,19 @@
  */
 
 export default function convertBytesToHuman(bytes) {
-  // your solution goes here
+
+  if (bytes < 0 || typeof bytes !== 'number' || isNaN(bytes)) {
+    return false;
+  }
+
+  const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB'];
+
+  let i = 0;
+
+  while (bytes >= 1024) {
+    bytes /= 1024;
+    i++;
+  }
+
+  return `${+(bytes.toFixed(2))} ${units[i]}`;
 }
