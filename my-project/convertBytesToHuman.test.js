@@ -10,25 +10,41 @@
 import convertBytesToHuman from './convertBytesToHuman';
 
 test('Возвращает false для неправильного типа данных', () => {
-  expect(convertBytesToHuman(convertBytesToHuman(-1))).toBe(false)
-  expect(convertBytesToHuman(convertBytesToHuman('string'))).toBe(false)
+  expect(convertBytesToHuman(-1)).toBe(false)
+  expect(convertBytesToHuman('string')).toBe(false)
+  expect(convertBytesToHuman('1024')).toBe(false)
+  expect(convertBytesToHuman(Infinity)).toBe(false)
+  expect(convertBytesToHuman(NaN)).toBe(false)
 });
 
-test('Возвращает корректное значение для чисел', () => {
-  expect(convertBytesToHuman(1)).toBe("1 B")
-  expect(convertBytesToHuman(1024)).toBe("1 KB")
-  expect(convertBytesToHuman(1025)).toBe("1 KB")
-  expect(convertBytesToHuman(34924)).toBe("34.11 KB")
-  expect(convertBytesToHuman(1048576)).toBe("1 MB")
-  expect(convertBytesToHuman(123123123)).toBe("117.42 MB")
-  expect(convertBytesToHuman(1073741824)).toBe("1 GB")
-  expect(convertBytesToHuman(1033773741824)).toBe("962.78 GB")
-  expect(convertBytesToHuman(1099511627776)).toBe("1 TB")
-  expect(convertBytesToHuman(109952711627776)).toBe("100 TB")
-  expect(convertBytesToHuman(1125899906842624)).toBe("1 PB")
-  expect(convertBytesToHuman(1025839931906842624)).toBe("911.13 PB")
-  expect(convertBytesToHuman(1152921504606846976)).toBe("1 EB")
-  expect(convertBytesToHuman(101292150460641846976)).toBe("87.86 EB")
+
+const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+
+test('Возвращает корректное целое значение для чисел', () => {
+  for (let i = 0; i < units.length; i++) {
+    expect(convertBytesToHuman(1024**i)).toBe(`1 ${units[i]}`)
+    expect(convertBytesToHuman(10 * 1024**i)).toBe(`10 ${units[i]}`)
+    expect(convertBytesToHuman(100 * 1024**i)).toBe(`100 ${units[i]}`)
+    expect(convertBytesToHuman(1000 * 1024**i)).toBe(`1000 ${units[i]}`)
+  }
+});
+
+test('Возвращает корректное нецелое значение для чисел', () => { 
+  for (let i = 0; i < units.length; i++) {
+    expect(convertBytesToHuman(1.5 * 1024**i)).toBe(`1.5 ${units[i]}`)
+    expect(convertBytesToHuman(10.5 * 1024**i)).toBe(`10.5 ${units[i]}`)
+    expect(convertBytesToHuman(100.5 * 1024**i)).toBe(`100.5 ${units[i]}`)
+    expect(convertBytesToHuman(1000.5 * 1024**i)).toBe(`1000.5 ${units[i]}`)
+  }
+});
+
+test('Возвращает корректное нецелое значение с точностью до сотой доли для чисел', () => { 
+  for (let i = 0; i < units.length; i++) {
+    expect(convertBytesToHuman(1.78 * 1024**i)).toBe(`1.78 ${units[i]}`)
+    expect(convertBytesToHuman(10.78 * 1024**i)).toBe(`10.78 ${units[i]}`)
+    expect(convertBytesToHuman(100.78 * 1024**i)).toBe(`100.78 ${units[i]}`)
+    expect(convertBytesToHuman(1000.78 * 1024**i)).toBe(`1000.78 ${units[i]}`)
+  }
 });
 
 // другая группа проверок

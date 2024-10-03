@@ -18,7 +18,7 @@ export default function convertBytesToHuman(bytes) {
     return false;
   }
 
-  const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB'];
+  const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 
   let i = 0;
 
