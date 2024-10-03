@@ -26,17 +26,17 @@ nonUniqueElements([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]
 
 export default function nonUniqueElements(data) {
 
-  const frequancy = {};
+  const frequency = new Map();
 
-  for (let i = 0; i < data.length; i++) {
-    frequancy[data[i]] = (frequancy[data[i]] || 0) + 1; 
+  for (let element of data) {
+    frequency.set(element, frequency.has(element));
   }
 
-  const result = []
-  
-  for (let i = 0; i < data.length; i++) {
-    if (frequancy[data[i]] > 1) {
-      result.push(data[i])
+  const result = [];
+
+  for (let element of data) {
+    if (frequency.get(element)) {
+      result.push(element);
     }
   }
 
