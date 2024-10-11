@@ -22,6 +22,11 @@
             <div class="search material-symbols-outlined">search</div>
             <div class="menu material-symbols-outlined">more_vert</div>
         </div>
+        
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="dropdown-item" id="info">Info</div>
+            <div class="dropdown-item" id="mute">Mute</div>
+        </div>
 
         <div class="chat">
 
@@ -31,25 +36,6 @@
             <input class="form-input" name="message-text" placeholder="Cообщение" type="text">
             <div class="material-symbols-outlined paperclip">attach_file</div>
         </form>
-
-        <script>
-            const form = document.querySelector('form');
-            const input = document.querySelector('.form-input');
-            const message = document.querySelector('.message');
-
-            form.addEventListener('submit', this.handleSubmit.bind(this));
-            form.addEventListener('keypress', this.handleKeyPress.bind(this));
-
-            function handleSubmit (event) {
-                event.preventDefault();
-                message.innerText = input.value;
-            }
-
-            function handleKeyPress (event) {
-                if (event.keyCode === 13) {
-                    form.dispatchEvent(new Event('submit'));
-                }
-            }
-        </script>
+        
     </body>
 </html>
