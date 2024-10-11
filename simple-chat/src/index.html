@@ -5,34 +5,7 @@
         <title>Send a message</title>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
-    <body>
-        <style>
-            .form {
-                width: 100%;
-                display: inline-block;
-                border: 1px solid rgba(25, 25, 25, 0.32);
-            }
-
-            .message {
-                color: red;
-                /* border: 1px solid; */
-                border-radius: 4px;
-                margin: 4px 0;
-                padding: 4px;
-            }
-
-            input[type=submit] {
-                visibility: collapse;
-            }
-
-            input {
-                border: 0;
-                outline: none;
-                width: calc(100% - 2px);
-            }
-            
-        </style>
-        
+    <body>       
         <div class="header">
             <div class="back-arrow material-symbols-outlined">arrow_back</div>   
             <div class="user">
@@ -50,10 +23,15 @@
             <div class="menu material-symbols-outlined">more_vert</div>
         </div>
 
-        <form class="form" action="/">
-            <div class="message"></div>
-            <input class="form-input" name="message-text" placeholder="Введите сообщение" type="text">
+        <div class="chat">
+
+        </div>
+
+        <form class="message-form" action="/">
+            <input class="form-input" name="message-text" placeholder="Cообщение" type="text">
+            <div class="material-symbols-outlined paperclip">attach_file</div>
         </form>
+
         <script>
             const form = document.querySelector('form');
             const input = document.querySelector('.form-input');
