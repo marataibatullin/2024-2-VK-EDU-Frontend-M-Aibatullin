@@ -3,6 +3,7 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>Send a message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
     <body>
         <style>
@@ -29,7 +30,26 @@
                 outline: none;
                 width: calc(100% - 2px);
             }
+            
         </style>
+        
+        <div class="header">
+            <div class="back-arrow material-symbols-outlined">arrow_back</div>   
+            <div class="user">
+                <div class="user-avatar material-symbols-outlined">account_circle</div> 
+                <div class="user-info">
+                    <div>
+                        Дженнифер
+                    </div>
+                    <div>
+                        была 2 часа назад
+                    </div>
+                </div>
+            </div>
+            <div class="search material-symbols-outlined">search</div>
+            <div class="menu material-symbols-outlined">more_vert</div>
+        </div>
+
         <form class="form" action="/">
             <div class="message"></div>
             <input class="form-input" name="message-text" placeholder="Введите сообщение" type="text">
