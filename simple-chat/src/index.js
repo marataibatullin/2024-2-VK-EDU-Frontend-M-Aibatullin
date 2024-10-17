@@ -2,8 +2,8 @@ import './index.css';
 
 import { Header } from '../components/Header/Header';
 import { ChatItem } from '../components/ChatItem/ChatItem';
-import { NewChatButton } from '../components/NewChatButton/NewChatButton';
-
+import { CreateChatButton } from '../components/CreateChatButton/CreateChatButton';
+import { Message } from '../components/Message/Message';
 
 
 function initializeData() {
@@ -18,9 +18,9 @@ function initializeData() {
                         { text: 'Привет!', timestamp: '2024-10-17T10:00:00Z', fromUser: false, read: true },
                         { text: 'Как твои дела?', timestamp: '2024-10-17T10:01:00Z', fromUser: false, read: true },
                         { text: 'Давно не общались.', timestamp: '2024-10-17T10:02:00Z', fromUser: false, read: true },
-                        { text: 'Ты как там?', timestamp: '2024-10-17T10:03:00Z', fromUser: true, read: false },
-                        { text: 'Работаю много...', timestamp: '2024-10-17T10:04:00Z', fromUser: false, read: false },
-                        { text: 'Как у тебя с проектом?', timestamp: '2024-10-17T10:05:00Z', fromUser: false, read: false },
+                        { text: 'Ты как там?', timestamp: '2024-10-17T10:03:00Z', fromUser: true, read: true },
+                        { text: 'Работаю много...', timestamp: '2024-10-17T10:04:00Z', fromUser: false, read: true },
+                        { text: 'Как у тебя с проектом?', timestamp: '2024-10-17T10:05:00Z', fromUser: false, read: true },
                         { text: 'Почти закончил, осталось немного.', timestamp: '2024-10-17T10:06:00Z', fromUser: true, read: true }
                     ]
                 },
@@ -32,9 +32,9 @@ function initializeData() {
                         { text: 'Привет!', timestamp: '2024-10-17T10:00:30Z', fromUser: true, read: true },
                         { text: 'Все хорошо, спасибо! А у тебя?', timestamp: '2024-10-17T10:01:30Z', fromUser: true, read: true },
                         { text: 'Да, тоже все в порядке.', timestamp: '2024-10-17T10:02:30Z', fromUser: true, read: true },
-                        { text: 'Что нового?', timestamp: '2024-10-17T10:03:30Z', fromUser: false, read: false },
-                        { text: 'Работаю над новым проектом.', timestamp: '2024-10-17T10:04:30Z', fromUser: true, read: false },
-                        { text: 'Это здорово!', timestamp: '2024-10-17T10:05:30Z', fromUser: false, read: false },
+                        { text: 'Что нового?', timestamp: '2024-10-17T10:03:30Z', fromUser: false, read: true },
+                        { text: 'Работаю над новым проектом.', timestamp: '2024-10-17T10:04:30Z', fromUser: true, read: true },
+                        { text: 'Это здорово!', timestamp: '2024-10-17T10:05:30Z', fromUser: false, read: true },
                         { text: 'Если нужна помощь, дай знать!', timestamp: '2024-10-17T10:06:30Z', fromUser: true, read: false }
                     ]
                 },
@@ -97,7 +97,41 @@ function renderChatInterface(userId) {
     });
     
     app.appendChild(header);
+
+    const backArrow = document.querySelector('.back-arrow');
+
+    if (isChat) {
+        if (backArrow) {
+            const backArrow = document.querySelector('.back-arrow');
+            backArrow.addEventListener('click', () => {
+                renderChatInterface(null);
+                loadChats();
+                addChatButton();
+            });
+        }
+
+        const chatContainer = document.createElement('div');
+        chatContainer.className = 'chat';
+        loadMessages(chatContainer, userId);
+
+        app.appendChild(chatContainer);
+
+    }
 }
+
+
+function loadMessages(chatContainer, userId) {
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    const user = users[userId];
+
+    console.log(userId)
+    if (user && user.messages) {
+        user.messages.forEach(message => {
+            chatContainer.appendChild(Message(message));
+        });
+    }
+}
+
 
 function getStatus(message) {
     if (message.fromUser && !message.read) {
@@ -153,15 +187,18 @@ function selectChat(userId) {
 
     if (user) {
         renderChatInterface(userId);
+
     }
 }
 
-function addNewChatButton() {
-    const newChatButton = NewChatButton();
-    app.appendChild(newChatButton);
+function addChatButton() {
+    const createChatButton = CreateChatButton();
+    app.appendChild(createChatButton);
 }
+
+
 
 initializeData();
 renderChatInterface(null);
 loadChats();
-addNewChatButton()
+addChatButton();
