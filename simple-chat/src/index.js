@@ -2,6 +2,9 @@ import './index.css';
 
 import { Header } from '../components/Header/Header';
 import { ChatItem } from '../components/ChatItem/ChatItem';
+import { NewChatButton } from '../components/NewChatButton/NewChatButton';
+
+
 
 function initializeData() {
     if (!localStorage.getItem('users')) {
@@ -81,10 +84,6 @@ function initializeData() {
 }
 
 
-initializeData();
-
-
-let currentChat = null;
 
 function renderChatInterface(userId) {
     const app = document.getElementById('app');
@@ -96,7 +95,7 @@ function renderChatInterface(userId) {
         userId: isChat ? userId : '',
         isChat
     });
-
+    
     app.appendChild(header);
 }
 
@@ -157,5 +156,12 @@ function selectChat(userId) {
     }
 }
 
+function addNewChatButton() {
+    const newChatButton = NewChatButton();
+    app.appendChild(newChatButton);
+}
+
+initializeData();
 renderChatInterface(null);
 loadChats();
+addNewChatButton()

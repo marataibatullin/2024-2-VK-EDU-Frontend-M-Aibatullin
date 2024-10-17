@@ -7,8 +7,13 @@
     color: white;
 }
 
-.burger, .search {
+/* .burger, .search {
     font-size: 30px;
+} */
+
+.header .material-symbols-outlined {
+    font-size: 30px;
+    padding: 0 10px;
 }
 
 .title {

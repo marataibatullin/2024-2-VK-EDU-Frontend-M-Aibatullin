@@ -20,8 +20,8 @@ body {
 
 .material-symbols-outlined {
     font-size: 30px;
-    padding: 0 10px;
 }
 
 @import url("../components/Header/Header.css");
 @import url("../components/ChatItem/ChatItem.css");
+@import url("../components/NewChatButton/NewChatButton.css");
