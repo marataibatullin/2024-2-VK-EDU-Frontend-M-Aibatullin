@@ -62,10 +62,21 @@ function loadMessages() {
     messages.forEach(addMessage);
 }
 
+function deleteMessages() {
+    if (confirm("Вы действительно хотите удалить все сообщения?")) {
+        chat.innerHTML = '';
+        localStorage.removeItem('messages');
+        dropdownMenu.classList.remove('active');
+    }
+}
+
 
 const menu = document.querySelector('.menu');
 const dropdownMenu = document.querySelector('#dropdown-menu');
+const btnDeleteMessages = document.querySelector('#delete-messages');
 
+
+btnDeleteMessages.addEventListener('click', deleteMessages);
 
 menu.addEventListener('click', () => {
     dropdownMenu.classList.toggle('active');
