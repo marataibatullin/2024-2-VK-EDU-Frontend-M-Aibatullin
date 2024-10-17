@@ -8,7 +8,9 @@ const senderName = "Вы";
 
 window.onload = loadMessages;
 
+
 form.addEventListener('submit', handleSubmit);
+
 input.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         handleSubmit(event);
@@ -17,7 +19,7 @@ input.addEventListener('keypress', function(event) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    const messageText = input.value.trim();
+    const messageText = input.textContent.trim();
     if (messageText) {
         const messageData = createMessageData(messageText);
         saveMessage(messageData);
