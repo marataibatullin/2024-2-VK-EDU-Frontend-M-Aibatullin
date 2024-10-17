@@ -1,89 +1,77 @@
 import './index.css';
 
-const form = document.querySelector('.message-form');
-const input = document.querySelector('.form-input');
-const chat = document.querySelector('.chat');
+import { Header } from '../components/Header/Header';
 
-const senderName = "Вы"; 
-
-window.onload = loadMessages;
-
-
-form.addEventListener('submit', handleSubmit);
-
-input.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        handleSubmit(event);
-    }
-});
-
-function handleSubmit(event) {
-    event.preventDefault();
-    const messageText = input.textContent.trim();
-    if (messageText) {
-        const messageData = createMessageData(messageText);
-        saveMessage(messageData);
-        addMessage(messageData);
-        input.value = ''; 
-    }
-}
-
-function createMessageData(text) {
-    return {
-        text: text,
-        sender: senderName,
-        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-    };
-}
-
-function saveMessage(message) {
-    let messages = JSON.parse(localStorage.getItem('messages')) || [];
-    messages.push(message);
-    localStorage.setItem('messages', JSON.stringify(messages));
-}
-
-
-function addMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = message.sender === 'Дженнифер' ? 'message-received' : 'message-sent';
-    messageDiv.innerHTML = `
-        <div class="message-text">${message.text}</div>
-        <div class="message-info">
-            ${message.time} <span class="message-status material-symbols-outlined">done_all</span>
-        </div>
-    `;
-
-    chat.appendChild(messageDiv);
-    chat.scrollTop = chat.scrollHeight;
-}
-
-function loadMessages() {
-    const messages = JSON.parse(localStorage.getItem('messages')) || [];
-    messages.forEach(addMessage);
-}
-
-function deleteMessages() {
-    if (confirm("Вы действительно хотите удалить все сообщения?")) {
-        chat.innerHTML = '';
-        localStorage.removeItem('messages');
-        dropdownMenu.classList.remove('active');
+function initializeData() {
+    if (!localStorage.getItem('users')) {
+        const initialData = {
+            users: {
+                user1: {
+                    name: 'Дженнифер Элли',
+                    lastSeen: '2 часа назад',
+                    messages: [
+                        { text: 'Привет, Антон!', timestamp: '2024-10-17T10:00:00Z', fromUser: false, read: true },
+                        { text: 'Как твои дела?', timestamp: '2024-10-17T10:01:00Z', fromUser: false, read: true },
+                        { text: 'Давно не общались.', timestamp: '2024-10-17T10:02:00Z', fromUser: false, read: true },
+                        { text: 'Ты как там?', timestamp: '2024-10-17T10:03:00Z', fromUser: true, read: false },
+                        { text: 'Работаю много...', timestamp: '2024-10-17T10:04:00Z', fromUser: false, read: false },
+                        { text: 'Как у тебя с проектом?', timestamp: '2024-10-17T10:05:00Z', fromUser: true, read: false },
+                        { text: 'Почти закончил, осталось немного.', timestamp: '2024-10-17T10:06:00Z', fromUser: false, read: false }
+                    ]
+                },
+                user2: {
+                    name: 'Антон Иванов',
+                    lastSeen: '10 минут назад',
+                    messages: [
+                        { text: 'Привет, Дженнифер!', timestamp: '2024-10-17T10:00:30Z', fromUser: true, read: true },
+                        { text: 'Все хорошо, спасибо! А у тебя?', timestamp: '2024-10-17T10:01:30Z', fromUser: true, read: true },
+                        { text: 'Да, тоже все в порядке.', timestamp: '2024-10-17T10:02:30Z', fromUser: true, read: true },
+                        { text: 'Что нового?', timestamp: '2024-10-17T10:03:30Z', fromUser: false, read: false },
+                        { text: 'Работаю над новым проектом.', timestamp: '2024-10-17T10:04:30Z', fromUser: true, read: false },
+                        { text: 'Это здорово!', timestamp: '2024-10-17T10:05:30Z', fromUser: false, read: false },
+                        { text: 'Если нужна помощь, дай знать!', timestamp: '2024-10-17T10:06:30Z', fromUser: true, read: false }
+                    ]
+                }
+            },
+            chats: [
+                {
+                    userId: 'user1',
+                    lastMessage: { text: 'Почти закончил, осталось немного.', timestamp: '2024-10-17T10:06:00Z', read: false }
+                },
+                {
+                    userId: 'user2',
+                    lastMessage: { text: 'Если нужна помощь, дай знать!', timestamp: '2024-10-17T10:06:30Z', read: false }
+                }
+            ]
+        };
+        localStorage.setItem('users', JSON.stringify(initialData.users));
+        localStorage.setItem('chats', JSON.stringify(initialData.chats));
     }
 }
 
 
-const menu = document.querySelector('.menu');
-const dropdownMenu = document.querySelector('#dropdown-menu');
-const btnDeleteMessages = document.querySelector('#delete-messages');
+initializeData();
+
+let currentChat = null;
+
+function renderChatInterface(userId) {
+    const app = document.getElementById('app');
+    app.innerHTML = ''; 
+
+    const isChat = userId !== null;
+
+    const header = Header({
+        userId: isChat ? userId : '',
+        isChat
+    });
+
+    app.appendChild(header);
+}
+
+function selectChat(userId) {
+    currentChat = userId;
+    renderChatInterface(currentChat);
+}
 
 
-btnDeleteMessages.addEventListener('click', deleteMessages);
-
-menu.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('active');
-});
-
-document.addEventListener('click', (event) => {
-    if (!menu.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('active');
-    }
-});
+renderChatInterface(null);
