@@ -84,10 +84,21 @@ body {
     flex-grow: 1;
     border: none;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 16px;
     margin-right: 10px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    resize: none;
+    overflow-y: auto;
+    min-height: 40px;
+    max-height: 150px;
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-placeholder);
+    color: grey;
 }
 
 .paperclip {
