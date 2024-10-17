@@ -4,6 +4,7 @@ import { Header } from '../components/Header/Header';
 import { ChatItem } from '../components/ChatItem/ChatItem';
 import { CreateChatButton } from '../components/CreateChatButton/CreateChatButton';
 import { Message } from '../components/Message/Message';
+import { MessageForm } from '../components/MessageForm/MessageForm';
 
 
 function initializeData() {
@@ -116,6 +117,20 @@ function renderChatInterface(userId) {
 
         app.appendChild(chatContainer);
 
+        const messageForm = MessageForm();
+
+        app.appendChild(messageForm);
+
+        const input = document.querySelector('.form-input');
+        
+        console.log(input)
+
+        input.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                handleSubmit(event, userId);
+            }
+        });
+
     }
 }
 
@@ -124,7 +139,6 @@ function loadMessages(chatContainer, userId) {
     const users = JSON.parse(localStorage.getItem('users')) || {};
     const user = users[userId];
 
-    console.log(userId)
     if (user && user.messages) {
         user.messages.forEach(message => {
             chatContainer.appendChild(Message(message));
@@ -194,6 +208,43 @@ function selectChat(userId) {
 function addChatButton() {
     const createChatButton = CreateChatButton();
     app.appendChild(createChatButton);
+}
+
+
+function handleSubmit(event, userId) {
+    event.preventDefault();
+    const messageText = input.textContent.trim();
+
+    if (messageText) {
+        const messageData = createMessageData(messageText, userId);
+        saveMessage(userId, messageData);
+        addMessage(messageData);
+        input.textContent = '';
+    }
+}
+
+function createMessageData(text, userId) {
+    return {
+        text,
+        timestamp: new Date().toISOString(),
+        fromUser: true,
+        read: false 
+    };
+}
+
+function saveMessage(userId, message) {
+    const users = JSON.parse(localStorage.getItem('users'));
+    const userMessages = users[userId].messages || [];
+    userMessages.push(message);
+    users[userId].messages = userMessages;
+
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
+function addMessage(message) {
+    const chatContainer = document.querySelector('.chat');
+    chatContainer.appendChild(Message(message)); 
+    chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
 
