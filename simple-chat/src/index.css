@@ -36,6 +36,9 @@ body {
     align-items: center;
     flex-grow: 1;
     gap: 2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .user-avatar {
@@ -49,14 +52,10 @@ body {
 }
 
 .user-info div {
-    font-size: 20px;
     line-height: 1.4;
 }
 
 .user-name {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     font-size: 20px;
 }
 
