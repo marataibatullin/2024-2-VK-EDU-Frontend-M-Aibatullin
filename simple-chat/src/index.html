@@ -25,9 +25,9 @@
         </div>
         
         <div class="dropdown-menu" id="dropdown-menu">
-            <div class="dropdown-item" id="info">Info</div>
-            <div class="dropdown-item" id="mute">Mute</div>
-            <div class="dropdown-item" id="delete-messages">Delete messages</div>
+            <div class="dropdown-item" id="info">Информация</div>
+            <div class="dropdown-item" id="mute">Без звука</div>
+            <div class="dropdown-item" id="delete-messages">Удалить все сообщения</div>
         </div>
 
         <div class="chat">
@@ -37,6 +37,7 @@
         <form class="message-form" action="/">
             <div class="form-input" name="message-text" data-placeholder="Cообщение" contenteditable=true></div>
             <div class="material-symbols-outlined paperclip">attach_file</div>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
         </form>
         
     </body>
