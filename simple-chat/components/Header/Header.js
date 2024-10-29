@@ -12,8 +12,12 @@ export function Header({ userId }) {
             <div class="user">
                 <div class="user-avatar material-symbols-outlined">account_circle</div> 
                 <div class="user-info">
-                    <div>${userName}</div>
-                    <div>${lastSeen}</div>
+                    <div class="user-name" title="${userName}">
+                        ${userName}
+                    </div>
+                    <div class="user-last-seen" title="${userName}">
+                        ${lastSeen}
+                    </div>
                 </div>
             </div>
             <div class="search material-symbols-outlined">search</div>
