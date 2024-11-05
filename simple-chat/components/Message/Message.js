@@ -1,16 +1,30 @@
-export function Message({ text, timestamp, fromUser, read }) {
+export function Message({ text, images, timestamp, fromUser, read }) {
     const messageDiv = document.createElement('div');
-    messageDiv.className = fromUser ? 'message-received' : 'message-sent';
+    
+    messageDiv.className = fromUser ? 'message-sent' : 'message-received';
     
     const messageStatusIcon = read ? 'done_all' : 'done';
 
-    messageDiv.innerHTML = `
+    let messageContent = `
         <div class="message-text">${text}</div>
+    `;
+
+    if (images && images.length > 0) {
+        images.forEach(imageSrc => {
+            messageContent += `
+                <img src="${imageSrc}" class="message-image">
+            `;
+        });
+    }
+
+    messageContent += `
         <div class="message-info">
             ${new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
             <span class="message-status material-symbols-outlined">${messageStatusIcon}</span>
         </div>
     `;
+
+    messageDiv.innerHTML = messageContent;
     
     return messageDiv;
 }

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #fafafa;
+    gap: 1rem;
     padding: 10px;
     position: fixed;
     bottom: 0;
@@ -15,7 +16,7 @@
     padding: 10px;
     border-radius: 6px;
     font-size: 16px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     resize: none;
     overflow-y: auto;
     min-height: 40px;
@@ -34,4 +35,6 @@
     opacity: 0.8;
     font-weight: 100;
     transform: rotate(90deg);
+    cursor: pointer;
+    position: relative;
 }
