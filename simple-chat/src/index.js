@@ -5,6 +5,7 @@ import { ChatItem } from '../components/ChatItem/ChatItem';
 import { CreateChatButton } from '../components/CreateChatButton/CreateChatButton';
 import { Message } from '../components/Message/Message';
 import { MessageForm } from '../components/MessageForm/MessageForm';
+import { DropdownMenu } from '../components/DropdownMenu/DropdownMenu';
 
 
 function initializeData() {
@@ -99,18 +100,40 @@ function renderChatInterface(userId) {
 
     const isChat = userId !== null;
 
-    const header = Header({
-        userId: isChat ? userId : '',
-        isChat
-    });
-    
-    app.appendChild(header);
-
-    const backArrow = document.querySelector('.back-arrow');
-
     if (isChat) {
+
+        const menu = document.createElement('div');
+        menu.className = 'menu material-symbols-outlined';
+        menu.textContent = 'more_vert';
+    
+        const dropdownMenu = DropdownMenu();
+    
+        const btnDeleteMessages = dropdownMenu.querySelector('#delete-messages');
+        btnDeleteMessages.addEventListener('click', () => deleteMessages(userId));
+
+    
+        menu.appendChild(dropdownMenu)
+    
+        menu.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('active');
+        });
+    
+        document.addEventListener('click', (event) => {
+            if (!menu.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        });
+        
+        const header = Header({
+            userId: isChat ? userId : '',
+            menu
+        });
+        
+        app.appendChild(header);
+
+        const backArrow = document.querySelector('.back-arrow');
+
         if (backArrow) {
-            const backArrow = document.querySelector('.back-arrow');
             backArrow.addEventListener('click', () => {
                 renderChatInterface(null);
                 loadChats();
@@ -144,10 +167,14 @@ function renderChatInterface(userId) {
                 handleSubmit(event, userId, input);
             }
         });
-
+    } else {
+        const header = Header({
+            userId: isChat ? userId : '',
+        });
+    
+        app.appendChild(header);
     }
 }
-
 
 function loadMessages(chatContainer, userId) {
     const users = JSON.parse(localStorage.getItem('users')) || {};
@@ -160,6 +187,15 @@ function loadMessages(chatContainer, userId) {
     }
 }
 
+function deleteMessages(userId) {
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    if (users[userId] && confirm("Вы действительно хотите удалить все сообщения?")) {
+        users[userId].messages = [];
+        localStorage.setItem('users', JSON.stringify(users));
+        const chat = document.querySelector('.chat')
+        chat.innerHTML = '';
+    }
+}
 
 function getStatus(message) {
     if (message.fromUser && !message.read) {

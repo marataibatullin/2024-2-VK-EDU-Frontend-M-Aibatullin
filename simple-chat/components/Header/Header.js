@@ -1,4 +1,4 @@
-export function Header({ userId }) {
+export function Header({ userId, menu}) {
     const header = document.createElement('div');
     header.className = 'header';
 
@@ -21,8 +21,9 @@ export function Header({ userId }) {
                 </div>
             </div>
             <div class="search material-symbols-outlined">search</div>
-            <div class="menu material-symbols-outlined">more_vert</div>
         `;
+            // <div class="menu material-symbols-outlined">more_vert</div>
+        header.appendChild(menu);
     } else {
         header.innerHTML = `
             <div class="burger material-symbols-outlined">menu</div>
