@@ -2,6 +2,7 @@ export function Message({ text, images, timestamp, fromUser, read }) {
     const messageDiv = document.createElement('div');
     messageDiv.className = fromUser ? 'message-sent' : 'message-received';
 
+    
     const messageStatusIcon = read ? 'done_all' : 'done';
 
     let messageContent = '';

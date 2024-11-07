@@ -215,8 +215,16 @@ function saveMessage(userId, message) {
 
 function addMessage(message) {
     const chatContainer = document.querySelector('.chat');
-    chatContainer.appendChild(Message(message)); 
+    
+    const newMessage = Message(message);
+    newMessage.classList.add('message');
+
+    chatContainer.appendChild(newMessage); 
     chatContainer.scrollTop = chatContainer.scrollHeight;
+
+    setTimeout(() => {
+        newMessage.classList.remove('message');
+    }, 500);
 }
 
 //
