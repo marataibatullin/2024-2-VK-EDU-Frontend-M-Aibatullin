@@ -128,6 +128,7 @@
 
 .message-info {
     font-size: 12px;
+    padding-left: 10px;
     color: #888;
     display: flex;
     align-items: center;
@@ -162,4 +163,19 @@
 
 .overlay .message-status {
     color: #9860a8;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    animation: slideIn 0.5s ease-in-out;
 }
