@@ -25,6 +25,8 @@
     flex-grow: 1;
     gap: 1rem;
     overflow: hidden;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .header .user-avatar {
@@ -52,4 +54,33 @@
 .user-last-seen {
     font-size: 12px;
     color: rgb(255, 255, 255, 0.6);
+}
+
+.header .material-symbols-outlined {
+    transition: all 0.3s ease;
+}
+
+.burger,
+.search,
+.back-arrow,
+.menu {
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.user:hover,
+.burger:hover,
+.search:hover,
+.back-arrow:hover,
+.menu:hover {
+    background-color: #6f1b8a;
+}
+
+.user:active,
+.burger:active,
+.search:active,
+.back-arrow:active,
+.menu:active {
+    filter: brightness(0.8);
 }
