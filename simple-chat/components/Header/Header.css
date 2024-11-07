@@ -3,15 +3,10 @@
     align-items: center;
     background-color: #8e24aa;
     padding: 10px;
-    /* height: 15vh; */
     color: white;
     gap: 1.5rem;
     min-height: 65px;
 }
-
-/* .burger, .search {
-    font-size: 30px;
-} */
 
 .header .material-symbols-outlined {
     font-size: 25px;
@@ -32,13 +27,11 @@
     overflow: hidden;
 }
 
-.user-avatar {
-    font-size: 50px;
-    /* margin-right: 10px; */
+.header .user-avatar {
+    font-size: 45px;
 }
 
 .user-info {
-    /* color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     color: white;
@@ -46,8 +39,6 @@
 }
 
 .user-info div {
-    /* font-size: 20px;
-    line-height: 1.4; */
     line-height: 1.4;
     text-overflow: ellipsis; 
     white-space: nowrap;

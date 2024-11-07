@@ -30,6 +30,7 @@ body {
     padding: 20px;
     height: calc(100vh - 115px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @import url("../components/Header/Header.css");
@@ -38,3 +39,4 @@ body {
 @import url("../components/Message/Message.css");
 @import url("../components/MessageForm/MessageForm.css");
 @import url("../components/DropdownMenu/DropdownMenu.css");
+

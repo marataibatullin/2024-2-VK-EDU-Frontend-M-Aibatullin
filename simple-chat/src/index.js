@@ -57,6 +57,7 @@ function renderChatInterface(userId) {
 
         const chatContainer = document.createElement('div');
         chatContainer.className = 'chat';
+
         loadMessages(chatContainer, userId);
 
         app.appendChild(chatContainer);
@@ -81,6 +82,11 @@ function renderChatInterface(userId) {
                 handleSubmit(event, userId, input);
             }
         });
+
+        const chatContainerScroll = app.querySelector('.chat')
+
+        chatContainerScroll.scrollTop = chatContainerScroll.scrollHeight;
+    
     } else {
         const header = Header({
             userId: isChat ? userId : '',
