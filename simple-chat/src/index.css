@@ -18,9 +18,9 @@ body {
     line-height: 20px;
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     font-size: 30px;
-}
+} */
 
 .chat {
     display: flex;
@@ -28,7 +28,7 @@ body {
     background-color: #f5f5f5;
     gap: 1rem;
     padding: 20px;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 115px);
     overflow-y: auto;
 }
 
