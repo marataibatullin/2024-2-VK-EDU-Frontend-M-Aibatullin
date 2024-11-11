@@ -6,7 +6,7 @@ export function Message({ text, images, timestamp, fromUser, read }) {
     const messageStatusIcon = read ? 'done_all' : 'done';
 
     let messageContent = `
-        <div class="message-text">${text}</div>
+        <div class="message-text">${text.replace(/\n/g, '<br>')}</div>
     `;
 
     if (images && images.length > 0) {
