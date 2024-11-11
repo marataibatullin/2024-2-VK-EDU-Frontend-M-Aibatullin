@@ -20,14 +20,15 @@ window.onload = loadMessages;
 form.addEventListener('submit', handleSubmit);
 
 input.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' && !event.shiftKey) {
         handleSubmit(event);
     }
 });
 
+
 function handleSubmit(event) {
     event.preventDefault();
-    const messageText = input.textContent.trim();
+    const messageText = input.innerHTML.replace(/<br\s*\/?>/gi, '\n').trim();
     if (messageText || attachedImages.length > 0) {
         const messageData = createMessageData(messageText, attachedImages);
         saveMessage(messageData);
@@ -40,14 +41,13 @@ function handleSubmit(event) {
 
 function createMessageData(text, images) {
     return {
-        text: text,
+        text: text.replace(/\n/g, '<br>'),
         images: images || [],
         timestamp: new Date().toISOString(),
         fromUser: true, 
         read: false
     };
 }
-
 
 function saveMessage(message) {
     const users = JSON.parse(localStorage.getItem('users')) || {};
@@ -59,13 +59,14 @@ function saveMessage(message) {
     localStorage.setItem('users', JSON.stringify(users));
 }
 
+
 function addMessage(message) {
     const messageDiv = document.createElement('div');
     messageDiv.className = message.fromUser ? 'message-sent' : 'message-received';
 
     const messageText = document.createElement('div');
     messageText.className = 'message-text';
-    messageText.textContent = message.text;
+    messageText.innerHTML = message.text.replace(/\n/g, '<br>')
     messageDiv.appendChild(messageText);
 
     message.images.forEach(imageSrc => {
