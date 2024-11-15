@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Send a message</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+    <body>       
+        <div class="header">
+            <div class="back-arrow material-symbols-outlined">arrow_back</div>   
+            <div class="user">
+                <div class="user-avatar material-symbols-outlined">account_circle</div> 
+                <div class="user-info">
+                    <div class="user-name" title="Дженнифер">
+                        Дженнифер
+                    </div>
+                    <div class="user-last-seen">
+                        была 2 часа назад
+                    </div>
+                </div>
+            </div>
+            <div class="search material-symbols-outlined">search</div>
+            <div class="menu material-symbols-outlined">more_vert</div>
+        </div>
+        
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="dropdown-item" id="info">Информация</div>
+            <div class="dropdown-item" id="mute">Без звука</div>
+            <div class="dropdown-item" id="delete-messages">Удалить все сообщения</div>
+        </div>
+
+        <div class="chat">
+
+        </div>
+
+        <form class="message-form" action="/">
+            <div class="form-input" name="message-text" data-placeholder="Cообщение" contenteditable=true></div>
+            <div class="material-symbols-outlined paperclip">attach_file</div>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+        </form>
+        
+    </body>
+
+</body>
