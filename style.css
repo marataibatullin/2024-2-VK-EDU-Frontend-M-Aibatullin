@@ -1,27 +1,34 @@
-.header {    
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    font-family: "MS Sans Serif";
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+}
+
+.header {
     display: flex;
     align-items: center;
     background-color: #8e24aa;
-    padding: 10px;
-    /* height: 15vh; */
     color: white;
+    padding: 10px;
     gap: 2rem;
-    min-height: 65px;
-}
-
-/* .burger, .search {
-    font-size: 30px;
-} */
-
-.header .material-symbols-outlined {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.title {
-    flex-grow: 1;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
 }
 
 .user {
@@ -34,11 +41,9 @@
 
 .user-avatar {
     font-size: 50px;
-    /* margin-right: 10px; */
 }
 
 .user-info {
-    /* color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     color: white;
@@ -46,8 +51,6 @@
 }
 
 .user-info div {
-    /* font-size: 20px;
-    line-height: 1.4; */
     line-height: 1.4;
     text-overflow: ellipsis; 
     white-space: nowrap;
@@ -62,60 +65,25 @@
     font-size: 12px;
     color: rgb(255, 255, 255, 0.6);
 }
-.chat-item {
+
+.search {
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    cursor: pointer;
+    position: relative;
+}
+
+.chat {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-}
-
-.chat-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.chat-info {
-    flex-grow: 1;
-    margin-left: 10px;
-}
-
-.chat-name {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.chat-last-message {
-    color: grey;
-    font-size: 14px;
-}
-
-.chat-meta {
-    text-align: right;
-}
-
-.chat-time {
-    font-size: 12px;
-    color: grey;
-}
-
-.chat-status {
-    font-size: 16px;
-    color: #8e24aa;
-}
-
-.create-chat-button {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background-color: #fed54e;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    background-color: #f5f5f5;
+    gap: 1rem;
+    padding: 20px;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
 }
 
 .message-sent, .message-received {
@@ -131,7 +99,6 @@
     word-wrap: break-word;
     line-height: 1.4;
 }
-
 
 .message-sent {
     align-self: flex-end;
@@ -149,8 +116,8 @@
 }
 
 .message-image {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .message-info {
@@ -179,13 +146,14 @@
     border: 1px solid rgba(90, 90, 90, 0.3); 
 }
 
+/* при увеличении строк в вводе закрывается поле для сообщений */
+/* добавить возможность переноса строк через enter/enter+shift */
 .form-input { 
     flex-grow: 1;
     border: none;
     padding: 10px;
     border-radius: 6px;
     font-size: 16px;
-    /* margin-right: 10px; */
     resize: none;
     overflow-y: auto;
     min-height: 40px;
@@ -207,69 +175,31 @@
     cursor: pointer;
     position: relative;
 }
+
 .dropdown-menu {
     display: none;
     position: absolute;
-    /* top: 40px; */
-    right: 10px;
+    top: 40px;
+    right: 0;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 10px;
-    /* width: 120px; */
-    font-size: 15px;
-    font-family: "MS Sans Serif";
-    font-weight: 400;
-    /* line-height: 20px; */
+    width: 120px;
 }
 
 .dropdown-menu.active {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    flex-direction: column;
+    display: block;
 }
 
 .dropdown-item {
+    padding: 10px;
     cursor: pointer;
     color: #333;
 }
 
 .dropdown-item:hover {
     background-color: #f0f0f0;
-}
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    background-color: #fff;
-    color: #333;
-    font-size: 15px;
-    font-family: "MS Sans Serif";
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.material-symbols-outlined {
-    font-size: 30px;
-}
-
-.chat {
-    display: flex;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    gap: 1rem;
-    padding: 20px;
-    height: calc(100vh - 125px);
-    overflow-y: auto;
 }
