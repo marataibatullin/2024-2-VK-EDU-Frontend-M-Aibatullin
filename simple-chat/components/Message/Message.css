@@ -1,0 +1,48 @@
+.message-sent, .message-received {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    max-width: 80%;
+    color: black;
+    padding: 15px 15px 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+
+.message-sent {
+    align-self: flex-end;
+    background-color: #f4e4f6;
+}
+
+.message-received {
+    align-self: flex-start;
+    background-color: #ffffff;
+}
+
+.message-text {
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.message-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.message-info {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.message-status {
+    font-size: 20px;
+    color: #8e24aa;
+    margin-left: 0.5rem;
+}
