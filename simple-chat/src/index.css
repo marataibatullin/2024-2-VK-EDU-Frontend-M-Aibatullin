@@ -21,7 +21,6 @@ body {
 .material-symbols-outlined {
     font-size: 30px;
 }
-
 .chat {
     display: flex;
     flex-direction: column;
