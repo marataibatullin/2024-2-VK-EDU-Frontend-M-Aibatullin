@@ -78,7 +78,7 @@ function renderChatInterface(userId) {
         imageInput.addEventListener('change', handleImageSelect);
 
         input.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
+            if (event.key === 'Enter' && !event.shiftKey) {
                 handleSubmit(event, userId, input);
             }
         });
@@ -183,12 +183,14 @@ function addChatButton() {
 
 function handleSubmit(event, userId, input) { 
     event.preventDefault();
-    const messageText = input.textContent.trim();
+    const messageText = input.innerHTML.replace(/<br\s*\/?>/gi, '\n').trim();
 
     if (messageText || attachedImages) {
         const messageData = createMessageData(messageText, attachedImages);
+        
         saveMessage(userId, messageData);
         addMessage(messageData);
+
         input.textContent = '';
         attachedImages = [];
     }
@@ -196,7 +198,7 @@ function handleSubmit(event, userId, input) {
 
 function createMessageData(text, images) {
     return {
-        text: text,
+        text: text.replace(/\n/g, '<br>'),
         images: images || [],
         timestamp: new Date().toISOString(),
         fromUser: true,

@@ -18,10 +18,6 @@ body {
     line-height: 20px;
 }
 
-/* .material-symbols-outlined {
-    font-size: 30px;
-} */
-
 .chat {
     display: flex;
     flex-direction: column;
@@ -34,42 +30,9 @@ body {
 }
 
 
-
 @import url("../components/Header/Header.css");
 @import url("../components/ChatItem/ChatItem.css");
 @import url("../components/CreateChatButton/CreateChatButton.css");
 @import url("../components/Message/Message.css");
 @import url("../components/MessageForm/MessageForm.css");
 @import url("../components/DropdownMenu/DropdownMenu.css");
-
-.create-chat-button {
-    transition-duration: 0.4s;
-  }
-  
-.create-chat-button:hover {
-    transition-duration: 0.1s;
-}
-  
-.create-chat-button:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 4em;
-    left: 0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    box-shadow: 0 0 10px 40px #fed54e;
-}
-  
-.create-chat-button:active:after {
-    box-shadow: 0 0 0 0 #fed54e;
-    position: absolute;
-    border-radius: 4em;
-    left: 0;
-    top:0;
-    opacity: 1;
-    transition: 0s;
-}
