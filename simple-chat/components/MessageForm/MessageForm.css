@@ -1,0 +1,57 @@
+.message-form {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    z-index: 2;
+    gap: 1rem;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid rgba(90, 90, 90, 0.3); 
+}
+
+.form-input { 
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    /* margin-right: 10px; */
+    resize: none;
+    overflow-y: auto;
+    min-height: 40px;
+    max-height: 150px;
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+
+.form-input:hover { 
+    background-color: rgb(182, 182, 182, 0.3);
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-placeholder);
+    color: #c3c3c3;
+}
+
+.paperclip {
+    color: gray;
+    opacity: 0.8;
+    font-weight: 100;
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.paperclip:hover{
+    background-color: rgb(182, 182, 182, 0.3);
+}
+
+.paperclip:active {
+    filter: brightness(0.8);
+}
