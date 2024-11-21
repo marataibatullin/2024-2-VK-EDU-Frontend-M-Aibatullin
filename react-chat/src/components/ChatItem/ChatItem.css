@@ -1,0 +1,57 @@
+
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.chat-item {
+    transition: all 0.3s ease;
+}
+
+.chat-item:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.chat-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat-last-message {
+    color: grey;
+    font-size: 14px;
+}
+
+.chat-meta {
+    text-align: right;
+}
+
+.chat-time {
+    font-size: 12px;
+    color: grey;
+}
+
+.chat-status {
+    font-size: 16px;
+    color: #8e24aa;
+}
+
+.chat-item:active {
+    filter: brightness(0.95);
+}
