@@ -3,9 +3,9 @@ export function CreateChatButton() {
     button.classList.add('create-chat-button', 'material-symbols-outlined');
     button.textContent = 'edit';
     
-    button.addEventListener('click', () => {
-        alert('Создать новый чат!');
-    });
+    // button.addEventListener('click', () => {
+    //     alert('Создать новый чат!');
+    // });
     
     return button;
 }

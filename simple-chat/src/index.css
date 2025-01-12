@@ -18,18 +18,17 @@ body {
     line-height: 20px;
 }
 
-.material-symbols-outlined {
-    font-size: 30px;
-}
 .chat {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
     gap: 1rem;
     padding: 20px;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 115px);
     overflow-y: auto;
+    overflow-x: hidden;
 }
+
 
 @import url("../components/Header/Header.css");
 @import url("../components/ChatItem/ChatItem.css");

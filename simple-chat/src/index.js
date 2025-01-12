@@ -8,7 +8,6 @@ import { MessageForm } from '../components/MessageForm/MessageForm';
 import { DropdownMenu } from '../components/DropdownMenu/DropdownMenu';
 import { initializeData } from './renderChat'
 
-
 function renderChatInterface(userId) {
     const app = document.getElementById('app');
     app.innerHTML = ''; 
@@ -58,6 +57,7 @@ function renderChatInterface(userId) {
 
         const chatContainer = document.createElement('div');
         chatContainer.className = 'chat';
+
         loadMessages(chatContainer, userId);
 
         app.appendChild(chatContainer);
@@ -83,11 +83,10 @@ function renderChatInterface(userId) {
             }
         });
 
-        // input.addEventListener('keypress', function(event) {
-        //     if (event.key === 'Enter') {
-        //         handleSubmit(event, userId, input);
-        //     }
-        // });
+        const chatContainerScroll = app.querySelector('.chat')
+
+        chatContainerScroll.scrollTop = chatContainerScroll.scrollHeight;
+    
     } else {
         const header = Header({
             userId: isChat ? userId : '',
@@ -218,8 +217,16 @@ function saveMessage(userId, message) {
 
 function addMessage(message) {
     const chatContainer = document.querySelector('.chat');
-    chatContainer.appendChild(Message(message)); 
+    
+    const newMessage = Message(message);
+    newMessage.classList.add('message');
+
+    chatContainer.appendChild(newMessage); 
     chatContainer.scrollTop = chatContainer.scrollHeight;
+
+    setTimeout(() => {
+        newMessage.classList.remove('message');
+    }, 500);
 }
 
 //
