@@ -1,144 +1,232 @@
 import './index.css';
+
+import { Header } from '../components/Header/Header';
+import { ChatItem } from '../components/ChatItem/ChatItem';
+import { CreateChatButton } from '../components/CreateChatButton/CreateChatButton';
+import { Message } from '../components/Message/Message';
+import { MessageForm } from '../components/MessageForm/MessageForm';
+import { DropdownMenu } from '../components/DropdownMenu/DropdownMenu';
 import { initializeData } from './renderChat'
 
-initializeData()
 
+function renderChatInterface(userId) {
+    const app = document.getElementById('app');
+    app.innerHTML = ''; 
 
-//
-// Работа с чатом
-//
+    const isChat = userId !== null;
 
-const form = document.querySelector('.message-form');
-const input = document.querySelector('.form-input');
-const chat = document.querySelector('.chat');
+    if (isChat) {
 
-const userKey = 'user1'; 
+        const menu = document.createElement('div');
+        menu.className = 'menu material-symbols-outlined';
+        menu.textContent = 'more_vert';
+    
+        const dropdownMenu = DropdownMenu();
+    
+        const btnDeleteMessages = dropdownMenu.querySelector('#delete-messages');
+        btnDeleteMessages.addEventListener('click', () => deleteMessages(userId));
 
-window.onload = loadMessages;
+    
+        menu.appendChild(dropdownMenu)
+    
+        menu.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('active');
+        });
+    
+        document.addEventListener('click', (event) => {
+            if (!menu.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        });
+        
+        const header = Header({
+            userId: isChat ? userId : '',
+            menu
+        });
+        
+        app.appendChild(header);
 
+        const backArrow = document.querySelector('.back-arrow');
 
-form.addEventListener('submit', handleSubmit);
+        if (backArrow) {
+            backArrow.addEventListener('click', () => {
+                renderChatInterface(null);
+                loadChats();
+                addChatButton();
+            });
+        }
 
-input.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter' && !event.shiftKey) {
-        handleSubmit(event);
-    }
-});
+        const chatContainer = document.createElement('div');
+        chatContainer.className = 'chat';
+        loadMessages(chatContainer, userId);
 
+        app.appendChild(chatContainer);
 
-function handleSubmit(event) {
-    event.preventDefault();
-    const messageText = input.innerHTML.replace(/<br\s*\/?>/gi, '\n').trim();
-    if (messageText || attachedImages.length > 0) {
-        const messageData = createMessageData(messageText, attachedImages);
-        saveMessage(messageData);
-        addMessage(messageData);
-        input.textContent = ''; 
-        attachedImages = [];
+        const messageForm = MessageForm();
+
+        app.appendChild(messageForm);
+
+        const input = document.querySelector('.form-input');
+        
+        const imageInput = document.getElementById('imageInput');
+        const paperclip = document.querySelector('.paperclip');
+
+        paperclip.addEventListener('click', () => {
+            imageInput.click();
+        });
+
+        imageInput.addEventListener('change', handleImageSelect);
+
+        input.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                handleSubmit(event, userId, input);
+            }
+        });
+
+        // input.addEventListener('keypress', function(event) {
+        //     if (event.key === 'Enter') {
+        //         handleSubmit(event, userId, input);
+        //     }
+        // });
+    } else {
+        const header = Header({
+            userId: isChat ? userId : '',
+        });
+    
+        app.appendChild(header);
     }
 }
 
+function loadMessages(chatContainer, userId) {
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    const user = users[userId];
+
+    if (user && user.messages) {
+        user.messages.forEach(message => {
+            chatContainer.appendChild(Message(message));
+        });
+    }
+}
+
+function deleteMessages(userId) {
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    if (users[userId] && confirm("Вы действительно хотите удалить все сообщения?")) {
+        users[userId].messages = [];
+        localStorage.setItem('users', JSON.stringify(users));
+        const chat = document.querySelector('.chat')
+        chat.innerHTML = '';
+    }
+}
+
+function getStatus(message) {
+    if (message.fromUser && !message.read) {
+        return 'trip_origin';
+    } else if (!message.fromUser && !message.read) {
+        return 'check';
+    } else if (!message.fromUser && message.read) {
+        return 'done_all';
+    }
+    return ''; 
+}
+
+
+function loadChats() {
+    const app = document.getElementById('app');
+    const chatsContainer = document.createElement('div');
+    chatsContainer.classList.add('chats');
+    app.appendChild(chatsContainer);
+
+    const chatsData = JSON.parse(localStorage.getItem('chats'));
+    const usersData = JSON.parse(localStorage.getItem('users'));
+
+    chatsData.forEach(chat => {
+        const user = usersData[chat.userId];
+        const lastMessage = chat.lastMessage.text;
+        const time = new Date(chat.lastMessage.timestamp).toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+
+        const status = getStatus(chat.lastMessage);
+
+        const chatItem = ChatItem({
+            userId: chat.userId,
+            avatar: user.avatar,
+            name: user.name,
+            message: lastMessage,
+            time: time,
+            status: status
+        });
+
+        chatItem.addEventListener('click', () => {
+            selectChat(chat.userId);
+        });
+
+        chatsContainer.appendChild(chatItem);
+    });
+}
+
+function selectChat(userId) {
+    const usersData = JSON.parse(localStorage.getItem('users'));
+    const user = usersData[userId];
+
+    if (user) {
+        renderChatInterface(userId);
+
+    }
+}
+
+function addChatButton() {
+    const createChatButton = CreateChatButton();
+    app.appendChild(createChatButton);
+}
+
+
+function handleSubmit(event, userId, input) { 
+    event.preventDefault();
+    const messageText = input.innerHTML.replace(/<br\s*\/?>/gi, '\n').trim();
+
+    if (messageText || attachedImages) {
+        const messageData = createMessageData(messageText, attachedImages);
+        
+        saveMessage(userId, messageData);
+        addMessage(messageData);
+
+        input.textContent = '';
+        attachedImages = [];
+    }
+}
 
 function createMessageData(text, images) {
     return {
         text: text.replace(/\n/g, '<br>'),
         images: images || [],
         timestamp: new Date().toISOString(),
-        fromUser: true, 
-        read: false
+        fromUser: true,
+        read: false 
     };
 }
 
-function saveMessage(message) {
-    const users = JSON.parse(localStorage.getItem('users')) || {};
-    if (!users[userKey]) {
-        console.warn(`Пользователь ${userKey} не найден`);
-        return;
-    }
-    users[userKey].messages.push(message);
+function saveMessage(userId, message) {
+    const users = JSON.parse(localStorage.getItem('users'));
+    const userMessages = users[userId].messages || [];
+    userMessages.push(message);
+    users[userId].messages = userMessages;
+
     localStorage.setItem('users', JSON.stringify(users));
 }
 
-
 function addMessage(message) {
-    const messageDiv = document.createElement('div');
-    messageDiv.className = message.fromUser ? 'message-sent' : 'message-received';
-
-    const messageText = document.createElement('div');
-    messageText.className = 'message-text';
-    messageText.innerHTML = message.text.replace(/\n/g, '<br>')
-    messageDiv.appendChild(messageText);
-
-    message.images.forEach(imageSrc => {
-        const img = document.createElement('img');
-        img.src = imageSrc;
-        img.className = 'message-image';
-        messageDiv.appendChild(img);
-    });
-
-    const messageInfo = document.createElement('div');
-    messageInfo.className = 'message-info';
-    const messageStatusIcon = message.read ? 'done_all' : 'check';
-    messageInfo.innerHTML = `${new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} <span class="message-status material-symbols-outlined">${messageStatusIcon}</span>`;    
-    messageDiv.appendChild(messageInfo);
-
-    chat.appendChild(messageDiv);
-    chat.scrollTop = chat.scrollHeight;
+    const chatContainer = document.querySelector('.chat');
+    chatContainer.appendChild(Message(message)); 
+    chatContainer.scrollTop = chatContainer.scrollHeight;
 }
-
-
-function loadMessages() {
-    const users = JSON.parse(localStorage.getItem('users')) || {};
-    const userMessages = users[userKey]?.messages || [];
-    userMessages.forEach(addMessage);
-}
-
-function deleteMessages() {
-    const users = JSON.parse(localStorage.getItem('users')) || {};
-    if (users[userKey] && confirm("Вы действительно хотите удалить все сообщения?")) {
-        users[userKey].messages = [];
-        localStorage.setItem('users', JSON.stringify(users));
-        chat.innerHTML = '';
-    }
-}
-
-
-//
-// dropdownmenu
-//
-
-const menu = document.querySelector('.menu');
-const dropdownMenu = document.querySelector('#dropdown-menu');
-const btnDeleteMessages = document.querySelector('#delete-messages');
-
-
-btnDeleteMessages.addEventListener('click', deleteMessages);
-
-menu.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('active');
-});
-
-document.addEventListener('click', (event) => {
-    if (!menu.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('active');
-    }
-});
-
 
 //
 // Прикрепление изображения
 //
 
-const imageInput = document.getElementById('imageInput');
-const paperclip = document.querySelector('.paperclip');
-
 let attachedImages = [];
-
-paperclip.addEventListener('click', () => {
-    imageInput.click();
-});
-
-imageInput.addEventListener('change', handleImageSelect);
 
 function handleImageSelect(event) {
     const file = event.target.files[0];
@@ -152,3 +240,9 @@ function handleImageSelect(event) {
     }
 }
 
+
+
+initializeData();
+renderChatInterface(null);
+loadChats();
+addChatButton();
