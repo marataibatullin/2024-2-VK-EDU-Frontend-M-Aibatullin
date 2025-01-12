@@ -1,0 +1,47 @@
+.header {    
+    display: flex;
+    align-items: center;
+    background-color: #8e24aa;
+    padding: 10px;
+    color: white;
+    gap: 1.5rem;
+    min-height: 65px;
+}
+
+.header .material-symbols-outlined {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.title {
+    flex-grow: 1;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.header .material-symbols-outlined {
+    transition: all 0.3s ease;
+}
+
+.burger,
+.search,
+.back-arrow,
+.menu {
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.burger:hover,
+.search:hover,
+.back-arrow:hover,
+.menu:hover {
+    background-color: #6f1b8a;
+}
+
+.burger:active,
+.search:active,
+.back-arrow:active,
+.menu:active {
+    filter: brightness(0.8);
+}

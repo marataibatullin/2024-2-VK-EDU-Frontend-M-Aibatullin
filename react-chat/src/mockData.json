@@ -1,0 +1,406 @@
+[
+  {
+    "id": "012e1fb5-88ab-4cf5-b390-b95b15ee3116",
+    "name": "Ed Kshlerin I",
+    "avatar": "https://avatars.githubusercontent.com/u/64522049",
+    "lastSeen": "2024-11-21T00:51:23.210Z",
+    "messages": [
+      {
+        "text": "Pel talio tero saepe.",
+        "images": [],
+        "timestamp": "2024-11-20T18:35:11.263Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Contigo termes thymum curvo varius arbustum.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNTUxIiBoZWlnaHQ9IjI1NzAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNkNTkxNWUiLz48dGV4dCB4PSIxMjc1LjUiIHk9IjEyODUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MjU1MXgyNTcwPC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNTE2IiBoZWlnaHQ9IjE1MDYiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMwN2JlYTYiLz48dGV4dCB4PSIxNzU4IiB5PSI3NTMiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MzUxNngxNTA2PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T11:41:45.299Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Conqueror absorbeo rem dens adeptio cui tendo cruentus vomica.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNTc0IiBoZWlnaHQ9IjMxNzAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNkZjk4ODkiLz48dGV4dCB4PSIxMjg3IiB5PSIxNTg1IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjI1NzR4MzE3MDwvdGV4dD48L3N2Zz4=",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNTI0IiBoZWlnaHQ9IjI2MzUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM2NmRjNzYiLz48dGV4dCB4PSIxMjYyIiB5PSIxMzE3LjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MjUyNHgyNjM1PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-20T13:12:27.546Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Uredo ultio careo odit decumbo angustus.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNTkxIiBoZWlnaHQ9IjM5MDAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM0ZTdmNTkiLz48dGV4dCB4PSIxMjk1LjUiIHk9IjE5NTAiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MjU5MXgzOTAwPC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMTkyIiBoZWlnaHQ9IjY0MSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzY4Y2ViZCIvPjx0ZXh0IHg9IjU5NiIgeT0iMzIwLjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTE5Mng2NDE8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T05:52:05.878Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Spargo tepesco capillus patior.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzMzk1IiBoZWlnaHQ9IjMyNTciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNjYTdkM2IiLz48dGV4dCB4PSIxNjk3LjUiIHk9IjE2MjguNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4zMzk1eDMyNTc8L3RleHQ+PC9zdmc+",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMTY4IiBoZWlnaHQ9IjcwNyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzliZGFkOCIvPjx0ZXh0IHg9IjEwODQiIHk9IjM1My41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjIxNjh4NzA3PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T07:19:08.554Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Paulatim ventito supellex reprehenderit uxor theologus in.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNzQwIiBoZWlnaHQ9IjExOTUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNiZjQzZmMiLz48dGV4dCB4PSIxMzcwIiB5PSI1OTcuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yNzQweDExOTU8L3RleHQ+PC9zdmc+",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzOTE5IiBoZWlnaHQ9IjgxIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNmMyNjRjIi8+PHRleHQgeD0iMTk1OS41IiB5PSI0MC41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjM5MTl4ODE8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-20T23:29:09.781Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Amitto conscendo repellendus terror.",
+        "images": [],
+        "timestamp": "2024-11-20T16:59:49.899Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Conventus pauci umerus tam.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzMzY4IiBoZWlnaHQ9IjI2MTciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM5Y2FkMzIiLz48dGV4dCB4PSIxNjg0IiB5PSIxMzA4LjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MzM2OHgyNjE3PC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNDA0IiBoZWlnaHQ9IjM5NzAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNhOGZjYmMiLz48dGV4dCB4PSIxNzAyIiB5PSIxOTg1IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjM0MDR4Mzk3MDwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T05:58:08.069Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Comptus crustulum tantum.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxNTAwIiBoZWlnaHQ9IjQ4MSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlYWY2OSIvPjx0ZXh0IHg9Ijc1MCIgeT0iMjQwLjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTUwMHg0ODE8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-20T16:57:47.842Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Cenaculum caritas cavus synagoga volva decet aeternus adulescens tabgo sollers.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNjkyIiBoZWlnaHQ9IjIzNTAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMyY2ZmOGEiLz48dGV4dCB4PSIxODQ2IiB5PSIxMTc1IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjM2OTJ4MjM1MDwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T08:55:32.619Z",
+        "fromUser": false,
+        "isRead": true
+      }
+    ]
+  },
+  {
+    "id": "da08b3bf-7780-48eb-81f5-e1bbf340fa2f",
+    "name": "Paul Lindgren",
+    "avatar": "https://avatars.githubusercontent.com/u/55198594",
+    "lastSeen": "2024-11-21T10:58:33.268Z",
+    "messages": [
+      {
+        "text": "Aperte bellicus amicitia truculenter adulescens.",
+        "images": [],
+        "timestamp": "2024-11-20T21:06:48.919Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Celo vulgo assumenda absum omnis sapiente.",
+        "images": [],
+        "timestamp": "2024-11-21T05:48:00.719Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Acer demulceo vitae tripudio tendo talis absconditus arbustum curiositas sopor.",
+        "images": [],
+        "timestamp": "2024-11-21T00:14:40.814Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Terminatio aperte tollo.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMzEwIiBoZWlnaHQ9Ijk0MyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ViYWRlZiIvPjx0ZXh0IHg9IjY1NSIgeT0iNDcxLjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTMxMHg5NDM8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-20T20:23:06.224Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Torrens crepusculum coniuratio dedico damno ter tenuis iure spiritus ter.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMjE5IiBoZWlnaHQ9IjM0MTciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxYmJiYjAiLz48dGV4dCB4PSI2MDkuNSIgeT0iMTcwOC41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjEyMTl4MzQxNzwvdGV4dD48L3N2Zz4=",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI3ODkiIGhlaWdodD0iMTU3NCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFkZjg0MyIvPjx0ZXh0IHg9IjM5NC41IiB5PSI3ODciIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+Nzg5eDE1NzQ8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T08:28:22.241Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Bestia tenetur advoco calculus distinctio vulnero dolores delibero odio tumultus.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyOTMyIiBoZWlnaHQ9IjM3MzAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM0ZmFhYTciLz48dGV4dCB4PSIxNDY2IiB5PSIxODY1IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjI5MzJ4MzczMDwvdGV4dD48L3N2Zz4=",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxNTg2IiBoZWlnaHQ9IjYwOCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzJhNWY4NCIvPjx0ZXh0IHg9Ijc5MyIgeT0iMzA0IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjE1ODZ4NjA4PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-20T19:56:57.591Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Aspicio ulterius basium titulus.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNjkyIiBoZWlnaHQ9IjE3MDMiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlY2RlM2YiLz48dGV4dCB4PSIxMzQ2IiB5PSI4NTEuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yNjkyeDE3MDM8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T01:20:44.288Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Antepono voluptatum supra cena.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMjYiIGhlaWdodD0iMTE1OCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2JmMGJjNCIvPjx0ZXh0IHg9IjYzIiB5PSI1NzkiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTI2eDExNTg8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-20T15:04:59.541Z",
+        "fromUser": true,
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "2df3e45b-1e90-4793-af10-a70236e769a4",
+    "name": "Gustavo Wehner",
+    "avatar": "https://avatars.githubusercontent.com/u/74206233",
+    "lastSeen": "2024-11-20T18:16:12.663Z",
+    "messages": [
+      {
+        "text": "Ager complectus consequuntur causa ipsa consequatur creo aggero.",
+        "images": [],
+        "timestamp": "2024-11-21T00:33:23.378Z",
+        "fromUser": true,
+        "isRead": false
+      },
+      {
+        "text": "Claudeo videlicet quidem texo vox circumvenio patrocinor neque crur.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMDciIGhlaWdodD0iOTAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGYzZWU3Ii8+PHRleHQgeD0iMTAzLjUiIHk9IjQ1MCIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yMDd4OTAwPC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-20T22:15:32.935Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Aetas cognatus sequi decretum beneficium asporto audio paulatim.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxODQ5IiBoZWlnaHQ9IjI0NjUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM4ZDJmMGUiLz48dGV4dCB4PSI5MjQuNSIgeT0iMTIzMi41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjE4NDl4MjQ2NTwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-20T14:37:59.881Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Curto deficio defendo concido optio.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNDM5IiBoZWlnaHQ9IjIxOTkiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNjYTNhMzMiLz48dGV4dCB4PSIxMjE5LjUiIHk9IjEwOTkuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yNDM5eDIxOTk8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T00:14:50.860Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Adsidue accommodo cui damnatio cupio deleniti id.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMTE0IiBoZWlnaHQ9IjI5MzciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM5MjdiN2UiLz48dGV4dCB4PSIxMDU3IiB5PSIxNDY4LjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MjExNHgyOTM3PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T12:21:47.721Z",
+        "fromUser": true,
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "3424789e-ca97-4812-a2f6-1b51d3e4daca",
+    "name": "Dr. Frederick Baumbach",
+    "avatar": "https://avatars.githubusercontent.com/u/73528872",
+    "lastSeen": "2024-11-20T22:09:54.569Z",
+    "messages": [
+      {
+        "text": "Cultura defungo quia cras.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNTg0IiBoZWlnaHQ9IjI4NDUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNjYjBlOGEiLz48dGV4dCB4PSIxMjkyIiB5PSIxNDIyLjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MjU4NHgyODQ1PC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMzIzIiBoZWlnaHQ9IjkwNiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzkyYzZiNyIvPjx0ZXh0IHg9IjExNjEuNSIgeT0iNDUzIiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjIzMjN4OTA2PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T04:24:41.727Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Eveniet cavus consuasor adstringo enim deleo.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMDYzIiBoZWlnaHQ9IjIzNTUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNiMWJkNjQiLz48dGV4dCB4PSI1MzEuNSIgeT0iMTE3Ny41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjEwNjN4MjM1NTwvdGV4dD48L3N2Zz4=",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI1ODUiIGhlaWdodD0iMzkyOCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4YWViOSIvPjx0ZXh0IHg9IjI5Mi41IiB5PSIxOTY0IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjU4NXgzOTI4PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-20T13:32:40.233Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Derideo custodia depopulo temperantia apud vulariter adulescens vulgus.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNDUzIiBoZWlnaHQ9IjIwNTEiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM5ZmY1NzkiLz48dGV4dCB4PSIxMjI2LjUiIHk9IjEwMjUuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yNDUzeDIwNTE8L3RleHQ+PC9zdmc+",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyNDgxIiBoZWlnaHQ9IjI0OTMiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZjgxZjQiLz48dGV4dCB4PSIxMjQwLjUiIHk9IjEyNDYuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yNDgxeDI0OTM8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-20T19:53:24.466Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Stella demens teneo curia.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNTMiIGhlaWdodD0iMjQ5OSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzA4ZWNhYiIvPjx0ZXh0IHg9IjE3Ni41IiB5PSIxMjQ5LjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MzUzeDI0OTk8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T06:31:39.537Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Abscido cito traho cresco.",
+        "images": [],
+        "timestamp": "2024-11-21T06:35:31.490Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Tutis arto traho accusamus mollitia sortitus ipsum.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI4OTYiIGhlaWdodD0iNSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzVkMTlhMSIvPjx0ZXh0IHg9IjQ0OCIgeT0iMi41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjg5Nng1PC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMDAzIiBoZWlnaHQ9Ijg1MiI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzBlYmZkMCIvPjx0ZXh0IHg9IjUwMS41IiB5PSI0MjYiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTAwM3g4NTI8L3RleHQ+PC9zdmc+"
+        ],
+        "timestamp": "2024-11-21T05:47:46.839Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Ad vorago stipes catena architecto pauci argentum cura deserunt tergo.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNjYwIiBoZWlnaHQ9IjMwMjAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNhYmJjYzkiLz48dGV4dCB4PSIxODMwIiB5PSIxNTEwIiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjM2NjB4MzAyMDwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T09:06:23.506Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Earum earum aestivus despecto alter.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMzczIiBoZWlnaHQ9IjMxNzEiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM4YjVlNGUiLz48dGV4dCB4PSIxMTg2LjUiIHk9IjE1ODUuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4yMzczeDMxNzE8L3RleHQ+PC9zdmc+",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI5MjMiIGhlaWdodD0iMjAyNCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2M0NTVkYiIvPjx0ZXh0IHg9IjQ2MS41IiB5PSIxMDEyIiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjkyM3gyMDI0PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T12:26:00.738Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Tolero civitas culpa tum ulciscor.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzMDc2IiBoZWlnaHQ9IjMzMzYiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlOTJhZDMiLz48dGV4dCB4PSIxNTM4IiB5PSIxNjY4IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjMwNzZ4MzMzNjwvdGV4dD48L3N2Zz4=",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxNjM3IiBoZWlnaHQ9IjE5NDEiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNiNDZhNWYiLz48dGV4dCB4PSI4MTguNSIgeT0iOTcwLjUiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MTYzN3gxOTQxPC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T02:12:19.930Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Ciminatio fugiat aufero adduco uterque pauci creo varius creator.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNDQ4IiBoZWlnaHQ9IjY2NCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzNlZTI2MiIvPjx0ZXh0IHg9IjE3MjQiIHk9IjMzMiIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4zNDQ4eDY2NDwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T01:59:32.104Z",
+        "fromUser": false,
+        "isRead": false
+      }
+    ]
+  },
+  {
+    "id": "10792b57-4ae8-4a80-aa09-c6dbd86239d9",
+    "name": "Timmy DuBuque",
+    "avatar": "https://avatars.githubusercontent.com/u/21297839",
+    "lastSeen": "2024-11-21T07:40:16.589Z",
+    "messages": [
+      {
+        "text": "Adsuesco crustulum arbustum unde cubicularis.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI4NTYiIGhlaWdodD0iMTE0OCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzJhNGU5MiIvPjx0ZXh0IHg9IjQyOCIgeT0iNTc0IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjg1NngxMTQ4PC90ZXh0Pjwvc3ZnPg=="
+        ],
+        "timestamp": "2024-11-21T05:11:00.516Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Tabesco depereo beneficium suppono benevolentia sto addo aveho volva ademptio.",
+        "images": [],
+        "timestamp": "2024-11-20T16:41:27.719Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Delego dignissimos vulnus defendo truculenter virtus arguo fuga commemoro vinitor.",
+        "images": [],
+        "timestamp": "2024-11-21T05:10:20.843Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Adsidue ipsum distinctio ambitus pecus capitulus doloribus cotidie arguo aspernatur.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIyMzMzIiBoZWlnaHQ9IjExNTciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNhNzRmYzciLz48dGV4dCB4PSIxMTY2LjUiIHk9IjU3OC41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjIzMzN4MTE1NzwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T04:49:00.986Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Canonicus acidus vix sollicito validus titulus casso.",
+        "images": [],
+        "timestamp": "2024-11-20T23:00:49.827Z",
+        "fromUser": false,
+        "isRead": false
+      },
+      {
+        "text": "Concido delego spero auxilium supplanto spes defaeco cibo clam.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNDk1IiBoZWlnaHQ9IjI0MjAiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmN2Q0NzIiLz48dGV4dCB4PSIxNzQ3LjUiIHk9IjEyMTAiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MzQ5NXgyNDIwPC90ZXh0Pjwvc3ZnPg==",
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSI5NDAiIGhlaWdodD0iMjQzOCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzM0MGIzZCIvPjx0ZXh0IHg9IjQ3MCIgeT0iMTIxOSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj45NDB4MjQzODwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T12:06:37.763Z",
+        "fromUser": false,
+        "isRead": true
+      },
+      {
+        "text": "Dolorum perspiciatis adopto cernuus cogito auxilium tripudio vulariter soluta.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzMTA1IiBoZWlnaHQ9IjE1NDUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxMGE5YTAiLz48dGV4dCB4PSIxNTUyLjUiIHk9Ijc3Mi41IiBmb250LXNpemU9IjIwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjMxMDV4MTU0NTwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-20T17:48:57.285Z",
+        "fromUser": true,
+        "isRead": true
+      },
+      {
+        "text": "Stultus sol vomica.",
+        "images": [
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIxMTEzIiBoZWlnaHQ9IjQxOSI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2UxOGZhZiIvPjx0ZXh0IHg9IjU1Ni41IiB5PSIyMDkuNSIgZm9udC1zaXplPSIyMCIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj4xMTEzeDQxOTwvdGV4dD48L3N2Zz4="
+        ],
+        "timestamp": "2024-11-21T02:15:58.786Z",
+        "fromUser": false,
+        "isRead": false
+      }
+    ]
+  }
+]
